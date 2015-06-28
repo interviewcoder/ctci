@@ -10,17 +10,17 @@ import org.junit.rules.Timeout;
 
 import com.careercup.DirectedGraphNode;
 
-public class SolutionTest {
+public class SolutionDFSTest {
     
-    /** Test method for {@link ch4.Q2_FindRouteInGraph.Solution } */
-    Solution solution;
+    /** Test method for {@link ch4.Q2_FindRouteInGraph.SolutionDFS } */
+    SolutionDFS solution;
 
     @Rule
     public Timeout globalTimeout = new Timeout(20);
 
     @Before
     public void setUp() throws Exception {
-        solution = new Solution();
+        solution = new SolutionDFS();
     }
 
     @After
@@ -87,7 +87,7 @@ public class SolutionTest {
     public void Test6() {
         DirectedGraphNode n1 = new DirectedGraphNode(1);
         DirectedGraphNode n2 = new DirectedGraphNode(2);
-        DirectedGraphNode n3 = new DirectedGraphNode(3);
+        DirectedGraphNode n3 = new DirectedGraphNode(2);
         n1.addAdjacent(n1);
         n2.addAdjacent(n1);
         n2.addAdjacent(n3);
@@ -95,7 +95,7 @@ public class SolutionTest {
         DirectedGraphNode end = n2;
         assertTrue(!solution.hasRoute(start, end));
     }
-
+    
     @Test
     public void Test7() {
         DirectedGraphNode n1 = null;
@@ -126,7 +126,6 @@ public class SolutionTest {
         DirectedGraphNode end = n2;
         assertTrue(solution.hasRoute(start, end));
     }
-
 
     @Test
     public void Test10() {

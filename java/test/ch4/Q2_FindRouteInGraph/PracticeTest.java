@@ -95,5 +95,49 @@ public class PracticeTest {
         DirectedGraphNode end = n2;
         assertTrue(!solution.hasRoute(start, end));
     }
+    
+    @Test
+    public void Test7() {
+        DirectedGraphNode n1 = null;
+        DirectedGraphNode n2 = new DirectedGraphNode(2);
+        DirectedGraphNode n3 = new DirectedGraphNode(3);
+        n2.addAdjacent(n1);
+        n2.addAdjacent(n3);
+        DirectedGraphNode start = n1;
+        DirectedGraphNode end = n2;
+        assertTrue(!solution.hasRoute(start, end));
+    }
+
+    @Test
+    public void Test8() {
+        DirectedGraphNode n1 = new DirectedGraphNode(1);
+        DirectedGraphNode n2 = null;
+        DirectedGraphNode start = n1;
+        DirectedGraphNode end = n2;
+        assertTrue(!solution.hasRoute(start, end));
+    }
+
+    @Test
+    public void Test9() {
+        DirectedGraphNode n1 = new DirectedGraphNode(1);
+        DirectedGraphNode n2 = null;
+        n1.addAdjacent(n2);
+        DirectedGraphNode start = n1;
+        DirectedGraphNode end = n2;
+        assertTrue(solution.hasRoute(start, end));
+    }
+
+
+    @Test
+    public void Test10() {
+        DirectedGraphNode n1 = new DirectedGraphNode(1);
+        DirectedGraphNode n2 = new DirectedGraphNode(2);
+        DirectedGraphNode n3 = null;
+        n1.addAdjacent(n1);
+        n1.addAdjacent(n2);
+        DirectedGraphNode start = n1;
+        DirectedGraphNode end = n3;
+        assertTrue(!solution.hasRoute(start, end));
+    }
 
 }

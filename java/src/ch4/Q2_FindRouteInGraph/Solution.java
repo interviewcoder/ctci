@@ -22,6 +22,9 @@ import com.careercup.DirectedGraphNode;
 public class Solution {
 
     public boolean hasRoute(DirectedGraphNode start, DirectedGraphNode end) {
+        if (start == null) {
+            return false;
+        }
         Queue<DirectedGraphNode> queue = new LinkedList<>();
         Set<DirectedGraphNode> visited = new HashSet<>();
         queue.add(start);
