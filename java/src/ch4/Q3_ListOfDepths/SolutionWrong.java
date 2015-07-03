@@ -11,7 +11,7 @@
  * @tag  : Linked List; Tree
  * @date : Jun 28, 2015
  */
-package ch4.Q4_GetNodesAtEachDepth;
+package ch4.Q3_ListOfDepths;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -20,7 +20,7 @@ import java.util.Queue;
 
 import com.careercup.TreeNode;
 
-/** see test {@link ch4.Q4_GetNodesAtEachDepth } */
+/** see test {@link ch4.Q3_ListOfDepths } */
 public class SolutionWrong {
 
     public List<List<TreeNode>> getNodesAtEachDepth(TreeNode root) {

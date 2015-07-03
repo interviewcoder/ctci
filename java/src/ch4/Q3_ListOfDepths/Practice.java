@@ -9,13 +9,13 @@
  *************************************************************************
  * @tag  : Linked List; Tree; Depth-first Search; Breadth-first Search
  */
-package ch4.Q4_GetNodesAtEachDepth;
+package ch4.Q3_ListOfDepths;
 
 import java.util.List;
 
 import com.careercup.TreeNode;
 
-/** see test {@link ch4.Q4_GetNodesAtEachDepth.PracticeTest } */
+/** see test {@link ch4.Q3_ListOfDepths.PracticeTest } */
 public class Practice {
 
     public List<List<TreeNode>> getNodesAtEachDepth(TreeNode root) {

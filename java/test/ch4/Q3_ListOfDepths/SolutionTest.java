@@ -1,4 +1,4 @@
-package ch4.Q4_GetNodesAtEachDepth;
+package ch4.Q3_ListOfDepths;
 
 import static org.junit.Assert.*;
 
@@ -12,11 +12,13 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.Timeout;
 
+import ch4.Q3_ListOfDepths.Solution;
+
 import com.careercup.TreeNode;
 
 public class SolutionTest {
 
-    /** Test method for {@link ch4.Q4_GetNodesAtEachDepth.Solution } */
+    /** Test method for {@link ch4.Q3_ListOfDepths.Solution } */
     Solution solution;
 
     @Rule

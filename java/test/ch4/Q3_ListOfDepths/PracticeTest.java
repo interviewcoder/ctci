@@ -1,4 +1,4 @@
-package ch4.Q4_GetNodesAtEachDepth;
+package ch4.Q3_ListOfDepths;
 
 import static org.junit.Assert.*;
 
@@ -12,19 +12,21 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.Timeout;
 
+import ch4.Q3_ListOfDepths.Practice;
+
 import com.careercup.TreeNode;
 
-public class SolutionBFSTest {
+public class PracticeTest {
 
-    /** Test method for {@link ch4.Q4_GetNodesAtEachDepth.SolutionBFS } */
-    SolutionBFS solution;
+    /** Test method for {@link ch4.Q3_ListOfDepths.Practice } */
+    Practice solution;
 
     @Rule
     public Timeout globalTimeout = new Timeout(20);
 
     @Before
     public void setUp() throws Exception {
-        solution = new SolutionBFS();
+        solution = new Practice();
     }
 
     @After

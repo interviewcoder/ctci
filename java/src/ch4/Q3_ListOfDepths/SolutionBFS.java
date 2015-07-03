@@ -11,14 +11,14 @@
  * @tag  : Linked List; Tree
  * @date : Jun 28, 2015
  */
-package ch4.Q4_GetNodesAtEachDepth;
+package ch4.Q3_ListOfDepths;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import com.careercup.TreeNode;
 
-/** see test {@link ch4.Q4_GetNodesAtEachDepth.SolutionBFSTest } */
+/** see test {@link ch4.Q3_ListOfDepths.SolutionBFSTest } */
 public class SolutionBFS {
 
     public List<List<TreeNode>> getNodesAtEachDepth(TreeNode root) {
