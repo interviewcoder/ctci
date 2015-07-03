@@ -1,4 +1,4 @@
-package ch4.Q4_CheckBalanced;
+package ch4.Q5_ValidateBST;
 
 import static org.junit.Assert.*;
 
@@ -8,21 +8,21 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.Timeout;
 
-import ch4.Q4_CheckBalanced.SolutionNlgN;
+import ch4.Q5_ValidateBST.Practice;
 
 import com.careercup.TreeNode;
 
-public class SolutionNlgNTest {
+public class PracticeTest {
     
-    /** Test method for {@link ch4.Q4_CheckBalanced.SolutionNlgN} */
-    SolutionNlgN solution;
+    /** Test method for {@link ch4.Q5_ValidateBST.Practice } */
+    Practice solution;
 
     @Rule
     public Timeout globalTimeout = new Timeout(20);
 
     @Before
     public void setUp() throws Exception {
-        solution = new SolutionNlgN();
+        solution = new Practice();
     }
 
     @After
@@ -71,7 +71,7 @@ public class SolutionNlgNTest {
     //  3 
     @Test
     public void Test4() {
-        TreeNode root = TreeNode.getTree2();
+        TreeNode root = TreeNode.getTree0();
         assertTrue(!solution.isValidBST(root));
     }
 
@@ -96,7 +96,7 @@ public class SolutionNlgNTest {
     //   2     3
     @Test
     public void Test6() {
-        TreeNode root = TreeNode.getTree3();
+        TreeNode root = TreeNode.getTree0();
         assertTrue(!solution.isValidBST(root));
     }
 
@@ -145,30 +145,6 @@ public class SolutionNlgNTest {
     @Test
     public void Test10() {
         TreeNode root = TreeNode.getTree8();
-        assertTrue(!solution.isValidBST(root));
-    }
-
-    //  2 
-    //    \
-    //      2
-    @Test
-    public void Test11() {
-        TreeNode t1 = new TreeNode(2);
-        TreeNode t2 = new TreeNode(2);
-        TreeNode.connect(t1, null, t2);
-        TreeNode root = t1;
-        assertTrue(!solution.isValidBST(root));
-    }
-
-    //     2
-    //    /
-    //   2
-    @Test
-    public void Test12() {
-        TreeNode t1 = new TreeNode(2);
-        TreeNode t2 = new TreeNode(2);
-        TreeNode.connect(t1, t2, null);
-        TreeNode root = t1;
         assertTrue(solution.isValidBST(root));
     }
 

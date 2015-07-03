@@ -1,4 +1,4 @@
-package ch4.Q4_CheckBalanced;
+package ch4.Q5_ValidateBST;
 
 import static org.junit.Assert.*;
 
@@ -8,21 +8,21 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.Timeout;
 
-import ch4.Q4_CheckBalanced.Practice;
+import ch4.Q5_ValidateBST.SolutionNlgN;
 
 import com.careercup.TreeNode;
 
-public class PracticeTest {
+public class SolutionNlgNTest {
     
-    /** Test method for {@link ch4.Q4_CheckBalanced.Practice } */
-    Practice solution;
+    /** Test method for {@link ch4.Q5_ValidateBST.SolutionNlgN} */
+    SolutionNlgN solution;
 
     @Rule
     public Timeout globalTimeout = new Timeout(20);
 
     @Before
     public void setUp() throws Exception {
-        solution = new Practice();
+        solution = new SolutionNlgN();
     }
 
     @After
@@ -71,7 +71,7 @@ public class PracticeTest {
     //  3 
     @Test
     public void Test4() {
-        TreeNode root = TreeNode.getTree0();
+        TreeNode root = TreeNode.getTree2();
         assertTrue(!solution.isValidBST(root));
     }
 
@@ -96,7 +96,7 @@ public class PracticeTest {
     //   2     3
     @Test
     public void Test6() {
-        TreeNode root = TreeNode.getTree0();
+        TreeNode root = TreeNode.getTree3();
         assertTrue(!solution.isValidBST(root));
     }
 
@@ -145,6 +145,30 @@ public class PracticeTest {
     @Test
     public void Test10() {
         TreeNode root = TreeNode.getTree8();
+        assertTrue(!solution.isValidBST(root));
+    }
+
+    //  2 
+    //    \
+    //      2
+    @Test
+    public void Test11() {
+        TreeNode t1 = new TreeNode(2);
+        TreeNode t2 = new TreeNode(2);
+        TreeNode.connect(t1, null, t2);
+        TreeNode root = t1;
+        assertTrue(!solution.isValidBST(root));
+    }
+
+    //     2
+    //    /
+    //   2
+    @Test
+    public void Test12() {
+        TreeNode t1 = new TreeNode(2);
+        TreeNode t2 = new TreeNode(2);
+        TreeNode.connect(t1, t2, null);
+        TreeNode root = t1;
         assertTrue(solution.isValidBST(root));
     }
 
