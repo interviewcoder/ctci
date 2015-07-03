@@ -9,10 +9,11 @@
  *************************************************************************
  * @tag: Depth-first Search; Tree
  */
-package ch4.Q1BalancedTree;
+package ch4.Q4_CheckBalanced;
 
 import com.careercup.TreeNode;
 
+/** see test {@link ch4.Q4_CheckBalanced.PracticeTest } */
 public class Practice {
     public boolean isBalancedTree(TreeNode root) {
         //TODO: code goes here

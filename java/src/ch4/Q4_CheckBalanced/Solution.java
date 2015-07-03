@@ -1,4 +1,4 @@
-package ch4.Q1BalancedTree;
+package ch4.Q4_CheckBalanced;
 
 import com.careercup.TreeNode;
 

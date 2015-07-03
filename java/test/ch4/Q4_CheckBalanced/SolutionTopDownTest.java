@@ -1,4 +1,4 @@
-package ch4.Q1BalancedTree;
+package ch4.Q4_CheckBalanced;
 
 import static org.junit.Assert.*;
 
@@ -7,6 +7,8 @@ import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.Timeout;
+
+import ch4.Q4_CheckBalanced.SolutionTopDown;
 
 import com.careercup.TreeNode;
 

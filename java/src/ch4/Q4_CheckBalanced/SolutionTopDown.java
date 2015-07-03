@@ -3,10 +3,11 @@
  * @tag: Depth-first Search; Tree
  * @date: 
  */
-package ch4.Q1BalancedTree;
+package ch4.Q4_CheckBalanced;
 
 import com.careercup.TreeNode;
 
+/** see test {@link ch4.Q4_CheckBalanced.SolutionTopDownTest } */
 public class SolutionTopDown {
     public int getTreeHeight(TreeNode root) {
         // base case

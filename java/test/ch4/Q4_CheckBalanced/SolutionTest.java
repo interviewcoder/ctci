@@ -1,4 +1,4 @@
-package ch4.Q1BalancedTree;
+package ch4.Q4_CheckBalanced;
 
 import static org.junit.Assert.*;
 
@@ -8,18 +8,20 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.Timeout;
 
+import ch4.Q4_CheckBalanced.Solution;
+
 import com.careercup.TreeNode;
 
-public class PracticeTest {
+public class SolutionTest {
     
-    Practice solution;
+    Solution solution;
 
     @Rule
-    public Timeout globalTimeout = new Timeout(20);
+    public Timeout globalTimeout = new Timeout(30);
 
     @Before
     public void setUp() throws Exception {
-        solution = new Practice();
+        solution = new Solution();
     }
 
     @After
@@ -151,6 +153,5 @@ public class PracticeTest {
         boolean actual = solution.isBalancedTree(root);
         assertTrue(!actual);
     }
-
 
 }
