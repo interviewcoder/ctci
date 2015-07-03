@@ -11,11 +11,11 @@
  * @tag  : Tree; Depth-first Search
  * @date : Jun 29, 2015
  */
-package ch4.Q5_ValidBST;
+package ch4.Q4_CheckBalanced;
 
 import com.careercup.TreeNode;
 
-/** see test {@link ch4.Q5_ValidBST.SolutionTest } */
+/** see test {@link ch4.Q4_CheckBalanced.SolutionTest } */
 public class Solution {
 
     // in-order traversal

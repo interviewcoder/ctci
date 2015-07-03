@@ -11,11 +11,11 @@
  * @tag  : Tree; Depth-first Search
  * @date : Jun 29, 2015
  */
-package ch4.Q5_ValidBST;
+package ch4.Q4_CheckBalanced;
 
 import com.careercup.TreeNode;
 
-/** see test {@link ch4.Q5_ValidBST.SolutionNlgNTest } */
+/** see test {@link ch4.Q4_CheckBalanced.SolutionNlgNTest } */
 public class SolutionNlgN {
 
     boolean isValidBST(TreeNode root) {

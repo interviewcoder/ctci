@@ -1,4 +1,4 @@
-package ch4.Q5_ValidBST;
+package ch4.Q4_CheckBalanced;
 
 import static org.junit.Assert.*;
 
@@ -8,19 +8,21 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.Timeout;
 
+import ch4.Q4_CheckBalanced.Solution;
+
 import com.careercup.TreeNode;
 
-public class SolutionNlgNTest {
+public class SolutionTest {
     
-    /** Test method for {@link ch4.Q5_ValidBST.SolutionNlgN} */
-    SolutionNlgN solution;
+    /** Test method for {@link ch4.Q4_CheckBalanced.Solution } */
+    Solution solution;
 
     @Rule
     public Timeout globalTimeout = new Timeout(20);
 
     @Before
     public void setUp() throws Exception {
-        solution = new SolutionNlgN();
+        solution = new Solution();
     }
 
     @After

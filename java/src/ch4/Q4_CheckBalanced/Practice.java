@@ -7,7 +7,7 @@
  *************************************************************************
  * @tag  : Tree; Depth-first Search
  */
-package ch4.Q5_ValidBST;
+package ch4.Q4_CheckBalanced;
 
 import com.careercup.TreeNode;
 

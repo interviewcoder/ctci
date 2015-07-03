@@ -1,4 +1,4 @@
-package ch4.Q5_ValidBST;
+package ch4.Q4_CheckBalanced;
 
 import static org.junit.Assert.*;
 
@@ -8,11 +8,13 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.Timeout;
 
+import ch4.Q4_CheckBalanced.Practice;
+
 import com.careercup.TreeNode;
 
 public class PracticeTest {
     
-    /** Test method for {@link ch4.Q5_ValidBST.Practice } */
+    /** Test method for {@link ch4.Q4_CheckBalanced.Practice } */
     Practice solution;
 
     @Rule
