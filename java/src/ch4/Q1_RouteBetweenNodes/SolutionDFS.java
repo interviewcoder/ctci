@@ -10,7 +10,7 @@
  * @tag  : Depth-first Search; Graph
  * @date : Jun 27, 2015
  */
-package ch4.Q2_FindRouteInGraph;
+package ch4.Q1_RouteBetweenNodes;
 
 import java.util.HashSet;
 import java.util.Set;

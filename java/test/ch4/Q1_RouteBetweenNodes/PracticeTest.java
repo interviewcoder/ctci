@@ -1,4 +1,4 @@
-package ch4.Q2_FindRouteInGraph;
+package ch4.Q1_RouteBetweenNodes;
 
 import static org.junit.Assert.*;
 
@@ -8,19 +8,21 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.Timeout;
 
+import ch4.Q1_RouteBetweenNodes.Practice;
+
 import com.careercup.DirectedGraphNode;
 
-public class SolutionDFSTest {
+public class PracticeTest {
     
-    /** Test method for {@link ch4.Q2_FindRouteInGraph.SolutionDFS } */
-    SolutionDFS solution;
+    /** Test method for {@link ch4.Q1_RouteBetweenNodes.Practice } */
+    Practice solution;
 
     @Rule
     public Timeout globalTimeout = new Timeout(20);
 
     @Before
     public void setUp() throws Exception {
-        solution = new SolutionDFS();
+        solution = new Practice();
     }
 
     @After
@@ -126,6 +128,7 @@ public class SolutionDFSTest {
         DirectedGraphNode end = n2;
         assertTrue(solution.hasRoute(start, end));
     }
+
 
     @Test
     public void Test10() {

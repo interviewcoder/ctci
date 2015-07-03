@@ -9,7 +9,7 @@
  * @tag  : Graph
  * @date : Jun 27, 2015
  */
-package ch4.Q2_FindRouteInGraph;
+package ch4.Q1_RouteBetweenNodes;
 
 import com.careercup.DirectedGraphNode;
 
