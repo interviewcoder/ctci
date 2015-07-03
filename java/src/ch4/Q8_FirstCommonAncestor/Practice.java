@@ -11,7 +11,7 @@
  *************************************************************************
  * @tag  : Tree; Depth-first Search
  */
-package ch4.Q7_FindFirstCommonAncestor;
+package ch4.Q8_FirstCommonAncestor;
 
 import com.careercup.TreeNode;
 

@@ -1,4 +1,4 @@
-package ch4.Q7_FindFirstCommonAncestor;
+package ch4.Q8_FirstCommonAncestor;
 
 import static org.junit.Assert.*;
 
@@ -8,19 +8,21 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.Timeout;
 
+import ch4.Q8_FirstCommonAncestor.Practice;
+
 import com.careercup.TreeNode;
 
-public class SolutionTest {
+public class PracticeTest {
     
-    /** Test method for {@link ch4.Q7_FindFirstCommonAncestor.Solution } */
-    Solution solution;
+    /** Test method for {@link ch4.Q8_FirstCommonAncestor.Practice } */
+    Practice solution;
 
     @Rule
     public Timeout globalTimeout = new Timeout(20);
 
     @Before
     public void setUp() throws Exception {
-        solution = new Solution();
+        solution = new Practice();
     }
 
     @After

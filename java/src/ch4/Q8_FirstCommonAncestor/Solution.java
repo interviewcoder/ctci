@@ -13,7 +13,7 @@
  * @tag  : Tree; Depth-first Search
  * @date : Jul 3, 2015
  */
-package ch4.Q7_FindFirstCommonAncestor;
+package ch4.Q8_FirstCommonAncestor;
 
 import java.util.ArrayList;
 import java.util.List;
