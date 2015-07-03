@@ -1,4 +1,4 @@
-package ch4.Q3_ConvertArrayToMinimalHeightBST;
+package ch4.Q2_MinimalTree;
 
 import static org.junit.Assert.*;
 
@@ -8,11 +8,13 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.Timeout;
 
+import ch4.Q2_MinimalTree.Practice;
+
 import com.careercup.TreeNode;
 
 public class PracticeTest {
 
-    /** Test method for {@link ch4.Q3_ConvertArrayToMinimalHeightBST.Practice } */
+    /** Test method for {@link ch4.Q2_MinimalTree.Practice } */
     Practice solution;
 
     @Rule

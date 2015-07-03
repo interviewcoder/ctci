@@ -10,11 +10,11 @@
  * @tag  : Array; Tree
  * @date : Jun 28, 2015
  */
-package ch4.Q3_ConvertArrayToMinimalHeightBST;
+package ch4.Q2_MinimalTree;
 
 import com.careercup.TreeNode;
 
-/** see test {@link ch4.Q3_ConvertArrayToMinimalHeightBST.SolutionTest } */
+/** see test {@link ch4.Q2_MinimalTree.SolutionTest } */
 public class Solution {
 
     public TreeNode convertToBST(int[] nums) {
